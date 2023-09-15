@@ -1,38 +1,115 @@
+@keyframes moverGradiente {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
 .App {
+  /* --tw-bg-opacity: 1; */
+  /* background-color: rgb(245 245 244 / var(--tw-bg-opacity)); */
+  /* background-color: black; */
+}
+
+.gradient-text {
+  background-image: linear-gradient(120deg, #C85AD3, #E34787, #FF7B00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.border-gradient {
+  background-image: linear-gradient(to left, #e271a0, #e8dae9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to left, #E34787, #FF7B00);
+  border-image-slice: 1;
+}
+
+.border-hr-gradient {
+  background-image: linear-gradient(to right, #C85AD3, #E34787, #FF7B00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #C85AD3, #E34787, #FF7B00);
+  border-image-slice: 1;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: -130px;
+}
+
+.border-gradient-bottom {
+  background-image: linear-gradient(to right, #C85AD3, #E34787, #FF7B00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #C85AD3, #E34787, #FF7B00);
+  border-image-slice: 1;
+}
+
+.text-gradient {
+  background:#E34787;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.background-gradient {
+  background-image: linear-gradient(to left, rgb(200, 90, 211), #E34787, #FF7B00);
+  /* background-image: linear-gradient(to left, rgb(67, 200, 209), #E34787, #FF7B00); */
+
+  border-radius: 20px;
+}
+
+.background-gradient1 {
+  background-image: linear-gradient(to right, #C85AD3, #E34787, #FF7B00);
+}
+
+.box-shadow-gradient {
+  box-shadow: 0 0 10px 0 rgba(216, 170, 170, 0.5);
+  background-image: linear-gradient(to right, #C85AD3, #E34787, #FF7B00);
+}
+
+.button-gradient {
+  background-image: linear-gradient(280deg,  #C85AD3, #E34787);
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-gradient:hover {
+  background-position: 100% 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.button-gradient:active {
+  background-image: linear-gradient(280deg, #ae7ddd, #b357ff);
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.button-gradient:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .button-gradient {
+    background-image: linear-gradient(280deg, #ae7ddd, #b357ff);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
