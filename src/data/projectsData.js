@@ -5,7 +5,7 @@ const projectsData = [
   {
     id: 1,
     language: "Node.js | JavaScript | Docker",
-    description: "Backend desenvolvido utilizando sequilize e express, em um banco de dados MySQL com autenticação e autorização implementada via token JWT e uma arquitetura MVC ",
+    description: "Backend desenvolvido utilizanmplementada vorização implementada via token JWT e uma arquitetura MVC ",
     repository: "https://github.com/jenifergs/blogs-api",
     image: blogsApi
   },
